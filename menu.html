@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <title>menu</title>
+  <link rel="stylesheet" href="menu.css">
+</head>
+<body>
+  <header>
+    <h3>
+      DELICE
+    </h3>
+    
+    <div class="liens">
+      <a href="index.html">Accueil</a>
+       <a href="apropos.html">A propos</a>
+       <a href="menu.html">Menu</a>
+       <a href="#contact">contact</a>
+    </div>
+  </header>
+  <main>
+    <section id="menu">
+      <nav>
+        <h3>
+          Menu
+        </h3>
+        <span>
+          <em>
+            Regardez, Choisissez et commandez
+          </em>
+        </span>
+      
+        </nav>
+    </section>
+    <section id="entree">
+      <nav class="section">
+        <h4>
+          Entrées
+        </h4>
+        <div class="img">
+          <img src="plat1.jpg"/>
+          <legend>
+            Prix: 3000FCFA Sans livraison <br>
+            Prix: 4500FCFA Livraison incluse
+          </legend>
+        </div>
+          <div class="img">
+          <img src="plat2.png"/>
+          <legend>
+            Prix: 2000FCFA Sans livraison <br>
+            Prix: 3500FCFA Livraison incluse
+          </legend>
+        </div>
+          <div class="img">
+          <img src="plat3.jpeg"/>
+          <legend>
+            Prix: 3500FCFA Sans livraison <br>
+            Prix: 5000FCFA Livraison incluse
+          </legend>
+              <div class="img">
+          <img src="plat4.jpg"/>
+          <legend>
+            Prix: 2500FCFA Sans livraison <br>
+            Prix: 4000FCFA Livraison incluse
+          </legend>
+        </div>
+            <div class="img">
+          <img src="plat5.jpg"/>
+          <legend>
+            Prix: 3500FCFA Sans livraison <br>
+            Prix: 5000FCFA Livraison incluse
+          </legend>
+        </div>
+        </div>
+      </nav>
+    </section>
+     <section id="plat_de_resistance">
+       <nav class="section">
+        <h4>
+          Plats de resistance
+        </h4>
+        <div class="img">
+          <img src="plat6.jpeg"/>
+          <legend>
+            Prix: 6000FCFA Sans livraison <br>
+            Prix: 7500FCFA Livraison incluse
+          </legend>
+        </div>
+           <div class="img">
+          <img src="plat7.jpg"/>
+          <legend>
+            Prix: 5000FCFA Sans livraison <br>
+            Prix: 6500FCFA Livraison incluse
+          </legend>
+        </div>
+           <div class="img">
+          <img src="plat8.png"/>
+          <legend>
+            Prix: 4000FCFA Sans livraison <br>
+            Prix: 5500FCFA Livraison incluse
+          </legend>
+        </div>
+           <div class="img">
+          <img src="plat9.jpeg"/>
+          <legend>
+            Prix: 5500FCFA Sans livraison <br>
+            Prix: 7000FCFA Livraison incluse
+          </legend>
+        </div>
+      </nav>
+    </section>
+     <section id="dessert">
+       <nav class="section">
+        <h4>
+          Desserts
+        </h4>
+         <div class="img">
+          <img src="plat13.jpg"/>
+          <legend>
+            Prix: 2000FCFA Sans livraison <br>
+            Prix: 3500FCFA Livraison incluse
+          </legend>
+        </div>
+        <div class="img">
+          <img src="plat10.jpeg"/>
+          <legend>
+            Prix: 2500FCFA Sans livraison <br>
+            Prix: 4000FCFA Livraison incluse
+          </legend>
+        </div>
+           <div class="img">
+          <img src="plat11.jpg"/>
+          <legend>
+            Prix: 2000FCFA Sans livraison <br>
+            Prix: 3500FCFA Livraison incluse
+          </legend>
+        </div>
+           <div class="img">
+          <img src="plat12.jpeg"/>
+          <legend>
+            Prix: 2000FCFA Sans livraison <br>
+            Prix: 3500FCFA Livraison incluse
+          </legend>
+        </div>
+      </nav>
+    </section>
+     <section id="boisson">
+       <nav class="section">
+        <h4>
+          Boissons
+        </h4>
+        
+           <div class="img">
+          <img src="plat14.jpg"/>
+          <legend>
+            Prix: 1500FCFA Sans livraison <br>
+            Prix: 3000FCFA Livraison incluse
+          </legend>
+        </div>
+           <div class="img">
+          <img src="plat15.jpg"/>
+          <legend>
+            Prix: 2000FCFA Sans livraison <br>
+            Prix: 3500FCFA Livraison incluse
+          </legend>
+        </div>
+         <div class="img">
+          <img src="plat16.jpg"/>
+          <legend>
+            Prix: 2000FCFA Sans livraison <br>
+            Prix: 3500FCFA Livraison incluse
+          </legend>
+        </div>
+      </nav>
+    </section>
+    <section>
+      <nav class="promo">
+        <h3>
+          Enjoy!<br>
+          Obtenez 10% de réduction pour toute commande de plus de 15000FCFA
+        </h3>
+      </nav>
+    </section>
+     <section id="contact">
+       <form id="commande-form">
+    <h2>Commander en ligne</h2>
+    <label for="adresse">Adresse :</label>
+    <input type="text" id="adresse" name="adresse" placeholder="Entrez votre adresse mail"required>
+    <label for="plats">Plats :</label>
+    <textarea id="plats" name="plats" rows="5" placeholder="Entrez vos commandes et vos coordonnées" required></textarea>
+    <button type="submit">Commander</button>
+  </form>
+    </section>
+  </main>
+</body>
+<script>
+const form = document.getElementById('commande-form');
+form.addEventListener('submit', (e) => {
+  e.preventDefault();
+  const adresse = document.getElementById('adresse').value;
+  const plats = document.getElementById('plats').value;
+  console.log(`Commande enregistrée : Adresse = ${adresse}, Plats = ${plats}`);
+  alert('Commande enregistrée avec succès !');
+});
+</script>
+</html>

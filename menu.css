@@ -1,0 +1,142 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: black;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  color: white;
+  backdrop-filter: blur(20px);
+}
+
+.img img{
+  border-radius: 50px;
+  width:350px;
+  position: relative;
+  margin-top: 2%;
+  
+}
+.section{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  overflow:visible;
+}
+img{
+  width: auto;
+  object-fit: cover;
+  
+}
+legend{
+  color: white;
+  font-size: 1em
+}
+h3{
+  color: white;
+  font-size: 3em;
+}
+h4{
+  color:white;
+  font-size: 2.5em;
+  text-decoration-line: underline;
+  margin-bottom: 10px;
+}
+section{
+  margin-top: 50px;
+}
+a{
+  text-decoration: none;
+  color: white;
+  font-size: 1.4em;
+  margin-left:10px;
+}
+.promo{
+  font-size: 2em;
+  background-image: url("reduc.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width:100%;
+  height: auto;
+  border-radius: 20px;
+}
+.promo h3{
+  color: red;
+}
+form {
+      width: 50%;
+      margin: 40px auto;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    label {
+      display: block;
+      margin-bottom: 10px;
+    }
+input[type="text"], textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+    }
+    button[type="submit"] {
+      width: 100%;
+      height: 40px;
+      background-color: #4CAF50;
+      color: #fff;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button[type="submit"]:hover {
+      background-color: #3e8e41;
+    }
+h2{
+  color: white;
+}
+label{
+  color: white;
+}
+#menu h3{
+  color: red;
+  margin:50px;
+}
+@media(max-width:768px){
+  form {
+    width: 90%;
+  }
+  .promo{
+  font-size: 1.5em;
+    height: auto;
+    width:100%;
+  }
+  .img img{
+  border-radius: 50px;
+  width:170px;
+  }
+  h3, h4, h2{
+    font-size: 1.3em;
+  }
+  #menu h3{
+    font-size:1.5em;
+  }
+  header h3{
+    font-size: 1em;
+  }
+  a{
+    font-size: 0.7em;
+    margin-left: 3px;
+  }
+  legend{
+    font-size: 1em;
+  }
+}

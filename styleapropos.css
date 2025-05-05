@@ -1,0 +1,52 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: gainsboro;
+  
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  color: white;
+  backdrop-filter: blur(30px);
+}
+h3{
+  font-size: 2em;
+}
+h2 {
+  font-size: 4em;
+  color: whitesmoke;
+  margin: 5%;
+}
+
+p {
+  font-size: 2.2em;
+  color: black;
+  
+}
+a{
+  color: white;
+  text-decoration: none;
+  font-size: 1.5em;
+  margin-left: 10px
+}
+@media(max-width:768px){
+  a{
+    font-size: 0.8em;
+    margin-left: 5px;
+  }
+  p {
+  font-size: 1.1em;
+  }
+  h3{
+  font-size: 1em;
+}
+h2 {
+  font-size:1.5em;
+}
+}
