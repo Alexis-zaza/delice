@@ -67,14 +67,14 @@ p{
   font-size: 0.8em;
 }
   h2{
-    font-size:1.5em;
+    font-size:1.2em;
   }
   a{
-  font-size:0.7em;
+  font-size:0.6em;
     margin-left: 5px
   }
   button a{
-    font-size: 1.5em;
+    font-size: 1.2em;
   }
   button{
   border-radius: 20px;
@@ -84,6 +84,6 @@ p{
   margin: 50px;
 }
   header {
-    padding: 10px 20px;
+    padding: 20px 40px;
   }
 }
